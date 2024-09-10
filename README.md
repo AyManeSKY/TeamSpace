@@ -31,7 +31,7 @@ Ce projet est une application complète de chat avec un site web, un chatbot AI 
 1. Clonez le dépôt Git :
     ```bash
     git clone https://github.com/votre-utilisateur/chat-application.git
-    cd chat-application
+    cd teamSpace
     ```
 
 2. Configurez la base de données :
