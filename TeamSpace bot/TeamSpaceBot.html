@@ -102,7 +102,7 @@
 
             xhttp.open("POST", "https://api.openai.com/v1/chat/completions", true);
             xhttp.setRequestHeader("Content-type", "application/json");
-            xhttp.setRequestHeader("Authorization", "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");
+            xhttp.setRequestHeader("Authorization", <!--your api key from open ai-->);
             xhttp.send(JSON.stringify(data));
 
             userInput.value = "";
