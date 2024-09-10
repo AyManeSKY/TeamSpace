@@ -36,15 +36,10 @@ Ce projet est une application complète de chat avec un site web, un chatbot AI 
 
 2. Configurez la base de données :
     - Créez une base de données MySQL.
-    - Importez le fichier `database.sql` fourni pour initialiser la structure de la base de données.
+    - Importez le fichier `teamspace.sql` fourni pour initialiser la structure de la base de données.
     - Modifiez le fichier de configuration `config.php` pour connecter votre base de données MySQL.
 
-3. Installez les dépendances :
-    ```bash
-    composer install
-    ```
-
-4. Lancez votre serveur local ou déployez sur un serveur web.
+3. Lancez votre serveur local ou déployez sur un serveur web.
 
 ## Utilisation
 
