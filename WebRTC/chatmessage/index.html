@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TeamSpace Groupe</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-color: #9926F0;
+     
+    }
+    #localVideo {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Animation de zoom-in pour les boutons */
+    .btn-zoom {
+      transition: transform 0.3s;
+    }
+
+    .btn-zoom:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1><img src="../../images/TSLOGO01.png" height="40" alt=""> TeamSpace Groupe</h1>
+  
+  <div id="callControls" class="container">
+    <button id="startCallButton" class="btn btn-primary btn-zoom"><img src="../../images/webcam.png" height="30"></button>
+    <button id="stopCallButton" class="btn btn-danger btn-zoom"><img src="../../images/barre-oblique-de-la-webcam.png" height="30"></button>
+    <button id="shareScreenButton" class="btn btn-secondary btn-zoom"><img src="../../images/lordinateur.png" height="30"></button>
+    <button id="inviteButton" class="btn btn-info btn-zoom"><img src="../../images/ajout-dutilisateur.png" height="30"></button>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div id="videoContainer" class="video-container">
+          <video id="localVideo" autoplay></video>
+          <video id="remoteVideo" autoplay></video>
+        </div>
+      </div>
+      <div class="col-md">
+        <div id="chatContainer">
+          <div id="messageContainer"></div>
+          <input type="text" id="messageInput" class="form-control" placeholder="Tapez un message...">
+          <div class="row">
+            <div class="col-md">
+              <button id="sendMessageButton" class="btn btn-primary">
+                <img src="../../images/commenter.png" height="30">
+              </button>
+            </div>
+            <div class="col-md">
+              <button id="sendMessageButton2" class="btn btn-primary">
+                <img src="../../images/microphone.png" height="30">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
